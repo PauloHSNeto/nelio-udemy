@@ -44,6 +44,40 @@ public class Main {
         System.out.println("Digite o valor do trabalho por hora");
         double trabalho = sc.nextDouble();
         double salario = trabalho*horas;
-        System.out.printf("O salario de "+ numero+" sera : %.2f",salario   );
+        System.out.printf("O salario de "+ numero+" sera : %.2f  \n",salario   );
+        // ex 5
+        System.out.println("Digite os dados");
+        int peca1= sc.nextInt();
+        int num1= sc.nextInt();
+        double val1= sc.nextDouble();
+        System.out.println("Digite os dados");
+        int peca2= sc.nextInt();
+        int num2= sc.nextInt();
+        double val2= sc.nextDouble();
+        double val = num1*val1+num2*val2;
+        System.out.println("VAlor a pagar: "+ val );
+        //ex 6
+        double As, Bs, Cs, triangulo, circulo, trapezio, quadrado, retangulo;
+
+        As = sc.nextDouble();
+        Bs = sc.nextDouble();
+        Cs = sc.nextDouble();
+
+        triangulo = As * Cs / 2.0;
+        circulo = 3.14159 * Cs * Cs;
+        trapezio = (As + Bs) / 2.0 * Cs;
+        quadrado = Bs * Bs;
+        retangulo = As * Bs;
+
+        System.out.printf("TRIANGULO: %.3f%n", triangulo);
+        System.out.printf("CIRCULO: %.3f%n", circulo);
+        System.out.printf("TRAPEZIO: %.3f%n", trapezio);
+        System.out.printf("QUADRADO: %.3f%n", quadrado);
+        System.out.printf("RETANGULO: %.3f%n", retangulo);
+
+        sc.close();
+
+
+
     }
 }
